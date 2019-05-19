@@ -32,8 +32,10 @@ Traveler Peter will go travel alone and take airplane, the destination is Japan.
 Traveler Mary will go travel with family member by driving car, the destination is New York.
 Traveler Peter also go travel to New York and this time, he goes with his family by train.
  
- 
-
+#### undstanding
+* Everything should depend on abstraction, abstraction could as a parameter for once changing happen.
+* Traveler should add Destination ... as parameter for set desination and execute travel.
+* Structure: Object has several options, option should be abstraction parameter for Object.
  
 
 ### 2.Observer pattern：behavioral Pattern
@@ -69,6 +71,10 @@ List of Java file for Observer pattern:
 
 Run ObserverDemo.java document:
 Subject1 will be create and Observer1, Observer 2 and Observer 3 add themselves to Subject ArrayList. Once Subject1 set a change, it will notify all Observer in the Observer ArrayList.  Each Observer will receive the update information and print it in their own way.
+#### understanding
+* Observer class has subject class for add itself to subject(follow subject). Subjects must has Observer for update info to subject and manage everything for observers.
+* Observers can have different way to accept the info they get from subject class.
+* Mutual relationship, one is dominant, this for manage everything for other class, if other class has too much right, the dominant one will be hacked.
  
 ### 3.Decorator pattern：Structural Pattern
 
@@ -104,6 +110,9 @@ List of Java file for Decorator pattern:
 Run DecoratorDemo.java
 The basic character are man and woman,but the basic character could be add the function from from CustomDec, WeaponDec, and SkillDec class respectively. The prerequisite is decorator implements the same interface or abstract class as the Character they are going to decorate.
 
+#### understanding
+* decorator should extend character for override function and use function. use parameter as parameter for special object with speciality.
+* add some new feature to a class, open to extension, close to modification
 
 
 ### 4.Command pattern：behavioral Pattern
@@ -137,6 +146,8 @@ List of Java file for Command pattern
 Run CommandDemo.java document
 
 After Remote controller button pressed, the command start execute, it will call receiver to action. 
+#### understanding
+* function in same class are coupling together, which means if you change one, other one will be effect
 
 ### 5. Adapter pattern：Structural Pattern
 #### Explanation of problem and solution
