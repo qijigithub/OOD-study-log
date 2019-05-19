@@ -105,6 +105,7 @@ Run DecoratorDemo.java
 The basic character are man and woman,but the basic character could be add the function from from CustomDec, WeaponDec, and SkillDec class respectively. The prerequisite is decorator implements the same interface or abstract class as the Character they are going to decorate.
 
 
+
 ### 4.Command pattern：behavioral Pattern
 
 #### Explanation of problem and solution
