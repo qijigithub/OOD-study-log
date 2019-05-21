@@ -1,5 +1,24 @@
 # OOD-study-log
-
+## SOILD principle
+* single responsibility principle
+	* one class only have one reason to change, responsibility change
+	* eg:a drawtriangle also showtriangle, if change like add drawcycle or showcycle, have to add in original class, class become big and disorder
+	* solve: draw triangle in one class, show triangle in one class
+*  open close principle
+	*	open to extension, close to modification
+	* eg:  areacalculator class to calculate triangle and add function to calculate rectangle or other shape area,  have to change class every time
+	* solve: abstract calculator to interface shape  and class implement this interface
+* liskov  substitution principle
+	* when you define a inheritance, the super class and child class is relationship of "is a" not "has a"
+	* eg: rectangle and square, square is not rectangle 
+* interface segregation principle
+	* eg: don't use a fat interface, use several small but special interface	* shape has calculate volume but rectangle don't have volume, only have area, so write another interface for 2D shape calculate area
+* dependency inversion principle
+	* high level stuff should not dependent on low level, both of them should depend on abstract
+	* eg: class A have a B b, B is another class, if I remove B, A cannot run either.
+	* Solve: for decouple, car a have a engine b, if I want to change engine b to engine c, I have to change car class, engine should be a interface, car also should be a interface, engine b and c implement engine. 
+	
+	
 ## Design Pattern Implementation Documents
 ### Brief Project Summary
 My project catalogs Six Patterns: Strategy Pattern, Decorator Pattern, Observer Pattern, Command Pattern, Adapter Pattern, and Façade Pattern. I choose to different application to each explain each pattern. The coding software is IntelliJ.
